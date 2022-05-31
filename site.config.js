@@ -1,20 +1,20 @@
 module.exports = {
   // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: '15f841ce3ead4fa7bd13579e79cf69cd',
+  rootNotionPageId: '32f60f9de1d9448896d10731ecf2db7b',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Build websites with Notion',
-  domain: '0hq.vercel.app',
-  author: '0hq',
+  name: 'The Library of University Tunnels',
+  domain: 'collegetunnels.com',
+  author: 'Will DePue',
 
   // open graph metadata (optional)
-  description: 'College tunnels',
-  socialImageTitle: 'College tunnels',
-  socialImageSubtitle: 'College tunnels',
+  description: 'The Library of University Tunnels, recording stories from students across the globe since 2003.',
+  socialImageTitle: 'The Library of University Tunnels',
+  socialImageSubtitle: 'A repository of guides, maps, high tales and adventures underneath school grounds.',
 
   // social usernames (optional)
   twitter: 'willdepue',

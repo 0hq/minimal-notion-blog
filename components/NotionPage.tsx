@@ -187,7 +187,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           property="og:description"
         />
         <meta
-          content="https://www.recompiled.fyi/src/OpenGraph2.jpeg"
+          content="https://www.recompiled.fyi/src/OpenGraph2.png"
           property="og:image"
         />
         <meta
@@ -199,7 +199,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           property="twitter:description"
         />
         <meta
-          content="https://www.recompiled.fyi/src/OpenGraph2.jpeg"
+          content="https://www.recompiled.fyi/src/OpenGraph2.png"
           property="twitter:image"
         />
         <meta property="og:type" content="website" />

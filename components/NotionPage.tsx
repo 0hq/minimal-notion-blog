@@ -197,7 +197,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
         {socialImage ? (
           <>
-            <meta name="twitter:card" content="summary_large_image" />
+            {/* <meta name="twitter:card" content="summary_large_image" /> */}
+            <meta content="summary_large_image" name="twitter:card" />
+
             <meta
               property="og:image"
               content="https://images.unsplash.com/photo-1576015656108-b8d2f976ec28?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy"

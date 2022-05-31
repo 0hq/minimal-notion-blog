@@ -177,51 +177,35 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <PageHead site={site} />
 
       <Head>
-        <meta property="og:title" content={title} />
-        <meta property="og:site_name" content={site.name} />
-
-        <meta name="twitter:title" content={title} />
-        <meta property="twitter:domain" content={site.domain} />
-
-        {config.twitter && (
-          <meta name="twitter:creator" content={`@${config.twitter}`} />
-        )}
-
-        {socialDescription && (
-          <>
-            <meta name="description" content={socialDescription} />
-            <meta property="og:description" content={socialDescription} />
-            <meta name="twitter:description" content={socialDescription} />
-          </>
-        )}
-
-        {socialImage ? (
-          <>
-            {/* <meta name="twitter:card" content="summary_large_image" /> */}
-            <meta content="summary_large_image" name="twitter:card" />
-
-            <meta
-              property="og:image"
-              content="https://images.unsplash.com/photo-1576015656108-b8d2f976ec28?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy"
-            />
-            <meta
-              name="twitter:image"
-              content="https://images.unsplash.com/photo-1576015656108-b8d2f976ec28?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy"
-            ></meta>
-          </>
-        ) : (
-          <meta name="twitter:card" content="summary" />
-        )}
-
-        {canonicalPageUrl && (
-          <>
-            <link rel="canonical" href={canonicalPageUrl} />
-            <meta property="og:url" content={canonicalPageUrl} />
-            <meta property="twitter:url" content={canonicalPageUrl} />
-          </>
-        )}
-
-        <title>{title}</title>
+        <meta
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+          name="description"
+        />
+        <meta content="The Library of University Tunnels" property="og:title" />
+        <meta
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+          property="og:description"
+        />
+        <meta
+          content="https://www.recompiled.fyi/src/OpenGraph2.jpeg"
+          property="og:image"
+        />
+        <meta
+          content="The Library of University Tunnels"
+          property="twitter:title"
+        />
+        <meta
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+          property="twitter:description"
+        />
+        <meta
+          content="https://www.recompiled.fyi/src/OpenGraph2.jpeg"
+          property="twitter:image"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:creator" content="@willdepue" />
+        <meta content="summary_large_image" name="twitter:card" />
+        <title>The Library of University Tunnels</title>
       </Head>
 
       <CustomFont site={site} />

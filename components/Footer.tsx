@@ -1,39 +1,43 @@
-import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
-import * as config from 'lib/config'
+import * as React from "react";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoSunnyOutline, IoMoonSharp } from "react-icons/io5";
+import * as config from "lib/config";
 
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const Footer: React.FC<{
-  isDarkMode: boolean
-  toggleDarkMode: () => void
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
 }> = ({ isDarkMode, toggleDarkMode }) => {
-  const [hasMounted, setHasMounted] = React.useState(false)
+  const [hasMounted, setHasMounted] = React.useState(false);
   const toggleDarkModeCb = React.useCallback(
     (e) => {
-      e.preventDefault()
-      toggleDarkMode()
+      e.preventDefault();
+      toggleDarkMode();
     },
     [toggleDarkMode]
-  )
+  );
 
   React.useEffect(() => {
-    setHasMounted(true)
-  }, [])
+    setHasMounted(true);
+  }, []);
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>2022 © {config.author}. <a href="https://jotzilla.net/DO/">Get started on DigitalOcean.</a></div>
+      <div className={styles.copyright}>
+        This website does not endorse or support illegal activity. Copying such
+        actions is dangerous and frequently leads to prosecution, suspension, or
+        personal injury.{" "}
+      </div>
 
       {hasMounted ? (
         <div className={styles.settings}>
           <a
             className={styles.toggleDarkMode}
             onClick={toggleDarkModeCb}
-            title='Toggle dark mode'
+            title="Toggle dark mode"
           >
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
@@ -46,8 +50,8 @@ export const Footer: React.FC<{
             className={styles.twitter}
             href={`https://twitter.com/${config.twitter}`}
             title={`Twitter @${config.twitter}`}
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaTwitter />
           </a>
@@ -58,25 +62,25 @@ export const Footer: React.FC<{
             className={styles.github}
             href={`https://github.com/${config.github}`}
             title={`GitHub @${config.github}`}
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
         )}
 
-        {config.linkedin && (
+        {/* {config.linkedin && (
           <a
             className={styles.linkedin}
             href={`https://www.linkedin.com/in/${config.linkedin}`}
             title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-        )}
+        )} */}
       </div>
-    </footer>    
-  )
-}
+    </footer>
+  );
+};

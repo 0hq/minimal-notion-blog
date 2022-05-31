@@ -8,14 +8,17 @@
  */
 .notion {
   font-size: 17px;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Apple Color Emoji,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol;
+  font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo",
+    NanumMyeongjo, Batang, serif;
 }
 
 .notion-page-title-icon {
   margin-right: 16px;
 }
 
-.notion-property-multi_select-item, .notion-property-select-item {
+.notion-property-multi_select-item,
+.notion-property-select-item {
   height: 22px;
 }
 
@@ -33,7 +36,6 @@
   line-height: 16px;
 }
 
-
 .notion-collection-card-body {
   margin-bottom: -20px;
   padding: 3px 3px;
@@ -48,7 +50,7 @@
 }
 
 .notion-toggle .notion-text {
-  padding: .15em 2px;
+  padding: 0.15em 2px;
 }
 
 .notion-header .breadcrumb.active {
@@ -63,12 +65,13 @@
 }
 
 .notion-property.notion-property-date::before {
-  content: 'Updated on';
+  content: "Updated on";
   margin-right: 5px;
 }
 
 .notion-collection-card-property {
-  padding: 3px 0;}
+  padding: 3px 0;
+}
 
 /*.notion-gallery-grid .notion-page-title-text::before {
   content: '↳';
@@ -155,7 +158,7 @@
 
 .notion-collection-card {
   border-radius: 5px;
-  box-shadow: 1px 1px 0px 2px hsla(0,0%,6%,.1);
+  box-shadow: 1px 1px 0px 2px hsla(0, 0%, 6%, 0.1);
   padding: 5px;
 }
 

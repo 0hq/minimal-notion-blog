@@ -177,35 +177,42 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <PageHead site={site} />
 
       <Head>
-        <meta
-          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
-          name="description"
-        />
-        <meta content="The Library of University Tunnels" property="og:title" />
-        <meta
-          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
-          property="og:description"
-        />
-        <meta
-          content="https://www.recompiled.fyi/src/OpenGraph2.png"
-          property="og:image"
-        />
-        <meta
-          content="The Library of University Tunnels"
-          property="twitter:title"
-        />
-        <meta
-          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
-          property="twitter:description"
-        />
-        <meta
-          content="https://www.recompiled.fyi/src/OpenGraph2.png"
-          property="twitter:image"
-        />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:creator" content="@willdepue" />
-        <meta content="summary_large_image" name="twitter:card" />
         <title>The Library of University Tunnels</title>
+        <meta
+          name="description"
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+        />
+
+        <meta property="og:url" content="https://www.collegetunnels.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="The Library of University Tunnels" />
+        <meta
+          property="og:description"
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+        />
+        <meta
+          property="og:image"
+          content="https://www.recompiled.fyi/src/OpenGraph2.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="collegetunnels.com" />
+        <meta
+          property="twitter:url"
+          content="https://www.collegetunnels.com/"
+        />
+        <meta
+          name="twitter:title"
+          content="The Library of University Tunnels"
+        />
+        <meta
+          name="twitter:description"
+          content="The Library of University Tunnels, recording stories from students across the globe since 2003."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.recompiled.fyi/src/OpenGraph2.png"
+        />
       </Head>
 
       <CustomFont site={site} />

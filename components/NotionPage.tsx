@@ -191,7 +191,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           content="The Library of University Tunnels, recording stories from students across the globe since 2003."
         />
         <meta
-          property="og:image"
+          property="og:image:src"
           content="https://www.recompiled.fyi/src/OpenGraph2.png"
         />
 
